@@ -175,13 +175,7 @@ namespace Partisan.Components {
                 <li>Tweet us: <a href="https://twitter.com/PartisanCollect">https://twitter.com/PartisanCollect</a></li>
               </ul>
           </div>
-        </div>
-        <h2>Interesting and alternative spaces in Manchester</h2>
-        <div className="row">
-          <div className="col-xs-12">
-            <p>Please get in touch with us if you would like to connect with us and have your venue listed here.</p>
-          </div>
-        </div>
+        </div>        
       </div>
       );
     }
