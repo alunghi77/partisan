@@ -13,7 +13,7 @@ namespace Partisan.Components {
     constructor() {
       super();
       this.state = {
-        contentType : "aboutus"
+        contentType : "whatispartisan"
       };
     }
 
@@ -36,10 +36,15 @@ namespace Partisan.Components {
       // the router observes changes in the URL and
       // triggers some component's event accordingly
       var router = Router({
-        '/': setState.bind(this, {contentType:"aboutus"}),
-        '/howwillitbefunded': setState.bind(this, {contentType:"howwillitbefunded"}),
-        '/getinvolved': setState.bind(this, {contentType:"getinvolved"}),
-      });
+        '/': setState.bind(this, {contentType:"whatispartisan"}),
+        '/whatispartisan': setState.bind(this, {contentType:"whatispartisan"}),
+        '/howtogetinvolved': setState.bind(this, {contentType:"howtogetinvolved"}),
+        '/cafebar': setState.bind(this, {contentType:"cafebar"}),
+        '/howareweorganised': setState.bind(this, {contentType:"howareweorganised"}),
+        '/inspiration': setState.bind(this, {contentType:"inspiration"}),
+        '/contact': setState.bind(this, {contentType:"contact"}),
+        '/usergroups': setState.bind(this, {contentType:"usergroups"}),
+        });
       router.init('/');
     }
 
@@ -47,24 +52,25 @@ namespace Partisan.Components {
       // ReactDOM.findDOMNode().scrollTop = 0 ;
     }
 
-    private showHowWillItBeFunded = () =>
+    private showWhatIsPartisan = () =>
     {
       return (
         <div>
-          <h2>How will it be funded?</h2>
+          <h2>What is Partisan?</h2>
           <div className="row">
             <div className="col-xs-12">
-            <p>Group members have been involved in setting up and running spaces for not-for-profit groups in the past (The Space Project Leeds; The Common House, London). However, we have learnt from experience that these spaces are not sustainable if they rely on volunteers giving their time for free. As such, Partisan will be run as a workers’ cooperative that pays its members a living wage for their time. This will ensure the sustainability of the project.</p>
-            <p>We will be funded initially through a combination of membership, loanstock and small pots of funding. Once the space is established, it will be solely sustainable through proceeds from the café-bar.</p>
-            <h2>How are we organised?</h2>
-            <p>Regulated Entertainment Collective (REC) is a workers’ co-operative who will collectively own the café-bar as social enterprise, which funds the social space so that groups can use it for free. The social space will be co-run and owned by its members.</p>
-            <p>The organisational structure of Partisan social space is a work in progress –much of the organisational structure, issues and problems involved remain up for discussion and will evolve as the experiment plays out. We will hold monthly Open House Get Togethers which are open to all users where we have the broader political discussions that affect the space, think about ways of working together and provide a means for new groups to come and check us out. Representation from each group who uses the space means that we can develop collective decision making, where users get a say in how the space is fun.</p>
-            <h2>Membership</h2>
-            <p>For life-time membership, members can join Partisan, giving them a say over how the social space is run and to be able to use the space for their own events. Joining as a member will also help the space get off the ground and move towards sustainable work, leisure and housing.</p>
+            <p>We want to create a space for independent, DIY, cultural and political activities in Manchester.</p>
+            <p>We hope that it will be an organisational hub in Manchester, consisting primarily of two rooms – a café-bar and a flexible social space – hopefully with some outdoor space. The social space will be an events space which progressive groups and independent cultural groups can use for free for meetings, film screening, book launches, parties and gigs.</p>
+            <p>Our main aim is to try to respond to feelings of exhaustion and disconnection in a context of austerity. Partisan can be a collective resource to bring groups together in Manchester and its central location will make it accessible to as wide a range of people as possible. We want the space to be accessible, child friendly and to be a space to socialize in without the pressure to consume or purchase food or drink</p>
+            <p>The space will complement existing <a href="#inspiration">alternative spaces and social centres</a> creating a network of alternative spaces in the city.</p>
+            <p>We hope that it will be an organisational hub in Manchester, consisting primarily of two rooms – a café-bar and a flexible social space – hopefully with some outdoor space. The social space will be an events space which progressive groups and independent cultural groups can use for free for meetings, film screening, book launches, parties and gigs.</p>
+            <p>We need you - the space will be shaped by those who use it and will only happen with collective effort to get it off the ground. If you are a community group, progressive campaign or individual with an idea for an alternative event then <a href="#contact">get in touch</a>.</p>
+            <h2>Why is this important for Manchester?</h2>
+            <p>Local community groups and campaigners (including us) know that there are few suitable places to meet in Manchester and hardly any for free. At Partisan, revenue generated by music events and the café-bar will subsidise the free use of the space.</p>
               <ul>
-                <li>Unemployed / low wage / student membership - £1</li>
-                <li>General membership - £3</li>
-                <li>Solidarity membership - £7</li>
+                <li>We want to provide space for free, so that people can channel their energies into political action and organizing</li>
+                <li>We want to provide well-paid, sustainable work for people in the context of declining wages and low pay; the café-bar will (eventually) provide high quality work</li>
+                <li>Any future ‘profits’ will be directed to creating housing co-operatives, to provide good quality, secure housing in the city.</li>
               </ul>
         </div>
       </div>
@@ -73,67 +79,133 @@ namespace Partisan.Components {
       )
     }
 
-    private showAboutUs = () =>
+    private showHowtoGetInvolved = () =>
     {
       return (
         <div>
-          <h2>What is Partisan?</h2>
+          <h2>How to get  involved  help</h2>
           <div className="row">
             <div className="col-xs-12">
-            <p>We want to create a space for independent, DIY, cultural and political activities in Manchester. The space will be flexible, functioning as a cultural venue, as well as an events space such as for meetings for community groups and progressive campaigns, film screenings, and book launches. Partisan will offer somewhere to meet, organise from and most importantly to have fun in! We hope that it will be an organisational hub in Manchester, consisting primarily of two rooms – a café-bar and a flexible social space – hopefully with some outdoor space.</p>
-            <p>Our main aim in setting up Partisan is to try to respond to feelings of exhaustion and disconnection across numerous groups in a context of austerity. We feel that Partisan can be a collective resource to bring groups together in Manchester and that its central location, and/or proximity to transport links, will make it accessible to as wide a range of people as possible. We want the space to be accessible, child friendly and be a space to socialize in without the pressure to consume or purchase food or drink. We felt that the space could complement existing alternative spaces and social centres – so a further aim is to create a network of alternative spaces in the city.</p>
-            <p>The space is also an experiment in building a “commons” in that we imagine these resources not as objects, commodities or things we own – but instead things that are built together through shared activity.</p>
-            <p>The space will be shaped by the needs of those who want to use it. Please do get in touch if you have ideas or proposals.</p>
-            <h2>Where do we want to go from here?</h2>
-            <p>We made a decision to rent a space rather than squat, for a number of reasons:</p>
-              <ul>
-                <li>Due to the intensity of labour that squatting – particularly in the currentclimate – requires.</li>
-                <li>We want to make the space public-facing and to encourage as many different groups and people as possible to use the space.</li>
-                <li>We wanted to provide space for free, so that people can channel their energies into political action and organizing.</li>
-                <li>We want to provide well-paid, sustainable work for people in the context of declining wages and low pay; as such, the café-bar will provide high quality work.</li>
-                <li>If there are any profits in the future, we will direct these to creating housing co-operatives, to provide good quality, secure housing in the city.</li>
-              </ul>
-            <h2>Café-bar</h2>
-            <p>The space will include a cafe-bar area that has regular opening hours. The cafe-bar will sell affordable alcoholic and non-alcoholic drinks, snacks and possibly hot food. It will also sell a selection of books from independent publishers (e.g. PM Press, Verso, Pluto etc) and house a Feminist Library (contributed by Feminist Fightback).</p>
-            <p>Although the space will not require that people within it consume food or drinks, the space as a whole will be supported by funds raised through the café-bar. So eating/drinking in it will be a way of showing solidarity and support and keeping the space running.</p>
-            <p>The café-bar will be collectively and democratically owned and managed as a workers co-op.</p>
-            <h2>Social space</h2>
-            <p>The social space will include a flexible venue room that is separate to the cafe-bar. This space can be used by different individuals and groups for club nights and gigs, film screenings, fund raisers and meetings. The space will be freely available to non-profit and social justice groups, such as anti-cuts campaigners, migrant groups, queer collectives and others.</p>
-            <p>Priority for the space will be given to community and political groups and arts organisations organized as collectives, with a commitment to progressive values.</p>
-            <h2>Why is this important for Manchester?</h2>
-            <p>Local community groups and campaigners that we have spoken to report that they have few suitable places to meet in Manchester and they often have to pay for space. At Partisan, revenue generated by music events and the café-bar would subsidise the free use of the space for not-for-profit groups. In addition, these groups could use the venue for fundraising events.</p>
+              <p>What we really need right now is people. We need your energy, enthusiasm and ideas to get this off the ground.</p>
+              <p>Partisan will only work with your help, support and involvement. So please do get involved in any way you can.</p>
+              <h2>Are you an individual who wants to join the collective?</h2>
+              <p>Do you want to help set up the venue? Work in it? Do you have building or design skills? Do you have fundraising skills? Do you just want to help establish an alternative venue for culture and politics in Manchester? Let us <a href="#contact">know</a>.</p>
+              <h2>Are you a community group or political organisation?</h2>
+              <p>Get in touch to tell us that you would like to become a User Group and use the space then <a href="#contact">contact us</a>.</p>
+          </div>
         </div>
-      </div>
       </div>
       );
     }
 
-    private showGetInvolved = () =>
+    private showCafeBar = () =>
     {
       return (
       <div>
-        <h2>How to get involved</h2>
+        <h2>Café-bar</h2>
         <div className="row">
           <div className="col-xs-12">
-            <p>The space will be run by its members in a cooperative and horizontal spirit based on mutual aid. That means we need as many people as are able to get involved with it wherever they can. Please email us at <a href="mailto:getinvolved@partisan.co.uk">getinvolved@partisan.co.uk</a> </p>
+            <p>The space will include a cafe-bar area with regular opening hours. The cafe-bar will sell affordable alcoholic and non-alcoholic drinks, snacks and possibly hot food. It will also sell a selection of books from independent publishers (e.g. PM Press, Verso, Pluto etc) and house a Feminist Library (contributed by Feminist Fightback).</p>
+            <p>Although the space will not require that people within it consume food or drinks, the space as a whole will be supported by funds raised through the café-bar. So eating/drinking in it will be a way of showing solidarity and support and keeping the space running.</p>
+            <p>The café-bar will be collectively and democratically owned and managed as a workers co-op.</p>
           </div>
         </div>
-        <h2>Others elsewhere...</h2>
+        <h2>Socal space</h2>
         <div className="row">
           <div className="col-xs-12">
-            <p>We have drawn a lot of inspiration from other workers’ co-operatives, social spaces and independent or alternative venues. For some idea of where we’ve come from and where we are heading:</p>
-            <ul>
-              <li>The Common House - <a href="www.commonhouse.org.uk">http://www.commonhouse.org.uk</a></li>
-              <li>Wharf Chambers - <a href="www.wharfchambers.org.uk">http://www.wharfchambers.org.uk</a></li>
-              <li>DIY Space for London – <a href="http://diyspaceforlondon.org">http://diyspaceforlondon.org</a></li>
-            </ul>
+            <p>The social space will include a flexible venue room that is separate to the cafe-bar. This space can be used by different individuals and groups for club nights and gigs, film screenings, fund raisers and meetings. The space will be freely available to non-profit and social justice groups, such as anti-cuts campaigners, migrant groups, queer collectives and others.</p>
+            <p>Priority for the space will be given to community and political groups and arts organisations organized as collectives, with a commitment to progressive values.</p>
           </div>
         </div>
-
       </div>
         );
     }
 
+    private showHowAreWeOrganised = () =>
+    {
+      return (
+        <div>
+          <h2>How are we organised?</h2>
+          <div className="row">
+            <div className="col-xs-12">
+              <p>Regulated Entertainment Collective (REC) is a workers’ co-operative who will collectively own the café-bar as workers’ co-operative and social enterprise, which funds the social space so that groups can use it for free. The social space will be co-run and owned by its members.</p>
+              <p>The organisational structure of Partisan social space is a work in progress – much of the organisational structure remain up for discussion and will evolve as the experiment plays out. We will hold monthly Open House Get Together’s which are open to all users where we have the broader political discussions that affect the space, think about ways of working together and provide a means for new groups to come and check us out. Representation from each group who uses the space will mean that we can develop collective decision making, where users get a say in how the space is used.</p>
+          </div>
+        </div>
+      </div>
+      );
+    }
+
+    private showInspiration = () =>
+    {
+      return (
+        <div>
+          <h2>Inspiring venues</h2>
+          <div className="row">
+            <div className="col-xs-12">
+              <p>Partisan is inspired by other workers’ co-operatives, social spaces and independent or alternative venues. For some idea of where we’ve come from and where we are heading:</p>
+              <ul>
+                <li>The Common House - <a href="www.commonhouse.org.uk">http://www.commonhouse.org.uk</a></li>
+                <li>Wharf Chambers - <a href="www.wharfchambers.org.uk">http://www.wharfchambers.org.uk</a></li>
+                <li>DIY Space for London – <a href="http://diyspaceforlondon.org">http://diyspaceforlondon.org</a></li>
+              </ul>
+          </div>
+        </div>
+        <h2>Interesting and alternative spaces in Manchester</h2>
+        <div className="row">
+          <div className="col-xs-12">
+            <p>Please get in touch with us if you would like to connect with us and have your venue listed here.</p>
+          </div>
+        </div>
+      </div>
+      );
+    }
+
+    private showContact = () =>
+    {
+      return (
+        <div>
+          <h2>Contact</h2>
+          <div className="row">
+            <div className="col-xs-12">
+              <p>We would love to hear from you.</p>
+              <ul>
+                <li>Email us: <a href="mailto:thepartisancollective@gmail.com ">thepartisancollective@gmail.com </a></li>
+                <li>Follow us: <a href="https://www.facebook.com/partisancollective">https://www.facebook.com/partisancollective</a></li>
+                <li>Tweet us: <a href="https://twitter.com/PartisanCollect">https://twitter.com/PartisanCollect</a></li>
+              </ul>
+          </div>
+        </div>
+        <h2>Interesting and alternative spaces in Manchester</h2>
+        <div className="row">
+          <div className="col-xs-12">
+            <p>Please get in touch with us if you would like to connect with us and have your venue listed here.</p>
+          </div>
+        </div>
+      </div>
+      );
+    }
+
+    private showUserGroups = () =>
+    {
+      return (
+        <div>
+          <h2>User groups</h2>
+          <div className="row">
+            <div className="col-xs-12">
+              <p>The following groups are involved in getting the space off the ground and will be user groups for various events and happenings:</p>
+              <ul>
+                <li>Arthouse</li>
+                <li>Feminist Fightback</li>
+                <li>Beefcake Charlie</li>
+                <li>Manchester and Salford Housing Action (MaSHA)</li>
+              </ul>
+              <p>Please <a href="#contact">contact us</a> if you would like to become a User Group.</p>
+          </div>
+        </div>
+      </div>
+      );
+    }
 
     // the JSX syntax is quite intuitive but check out
     // https://facebook.github.io/react/docs/jsx-in-depth.html
@@ -144,12 +216,20 @@ namespace Partisan.Components {
       {
       switch(this.state.contentType)
         {
-          case "aboutus":
-            return this.showAboutUs();
-          case "getinvolved":
-            return this.showGetInvolved();
-          case "howwillitbefunded":
-            return this.showHowWillItBeFunded();
+          case "whatispartisan":
+            return this.showWhatIsPartisan();
+          case "howtogetinvolved":
+            return this.showHowtoGetInvolved();
+          case "cafebar":
+            return this.showCafeBar();
+          case "howareweorganised":
+            return this.showHowAreWeOrganised();
+          case "inspiration":
+            return this.showInspiration();
+          case "contact":
+            return this.showContact();
+          case "usergroups":
+            return this.showUserGroups();
           default:
             return (<div>"Page not found. Please go to the home page and try again."</div>)
         }
@@ -159,9 +239,7 @@ namespace Partisan.Components {
 
       return (
         <div>
-            <div className="page-header">
-              <h1>{this.props.model.header}</h1>
-            </div>
+              <img className="center-block" src="./assets/images/HeaderFactoryLogo.jpg"/>
             {main}
        </div>
      );
