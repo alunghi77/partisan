@@ -29,7 +29,9 @@
         "typings/react/react.d.ts",
         "typings/tsd.d.ts",
         "scripts/aboutus.tsx",
-        "scripts/app.tsx"
+        "scripts/app.tsx",
+        "scripts/application.tsx",
+        "scripts/howtogetinvolved.tsx"
     ],
     "atom": {
         "rewriteTsconfig": true
