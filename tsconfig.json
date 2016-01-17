@@ -29,9 +29,13 @@
         "typings/react/react.d.ts",
         "typings/tsd.d.ts",
         "scripts/aboutus.tsx",
-        "scripts/app.tsx",
         "scripts/application.tsx",
-        "scripts/howtogetinvolved.tsx"
+        "scripts/components/cafebar.tsx",
+        "scripts/components/contact.tsx",
+        "scripts/components/howareweorganised.tsx",
+        "scripts/components/howtogetinvolved.tsx",
+        "scripts/components/inspiration.tsx",
+        "scripts/components/whatispartisan.tsx"
     ],
     "atom": {
         "rewriteTsconfig": true

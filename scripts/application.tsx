@@ -5,8 +5,13 @@ correctly*/
 declare var Router : any;
 
 var router = Router({
-  '/': this.renderWhatIsPartisan(),
-  '/howtogetinvolved': this.renderHowToGetInvolved()
+  '/': this.renderWhatIsPartisan,
+  '/whatispartisan': this.renderWhatIsPartisan,
+  '/howtogetinvolved': this.renderHowToGetInvolved,
+  '/cafebar': this.renderCafeBar,
+  '/howareweorganised': this.renderHowAreWeOrganised,
+  '/inspiration': this.renderInspiration,
+  '/contact': this.renderContact  
 });
 
 router.init('/');
@@ -19,6 +24,30 @@ function renderWhatIsPartisan() {
 
 function renderHowToGetInvolved() {
   ReactDOM.render(<Partisan.Components.HowToGetInvolved header="How to get involved?" />,
+    document.getElementById("partisan-app")
+  );
+}
+
+function renderCafeBar() {
+  ReactDOM.render(<Partisan.Components.CafeBar header="Cafe bar" />,
+    document.getElementById("partisan-app")
+  );
+}
+
+function renderHowAreWeOrganised() {
+  ReactDOM.render(<Partisan.Components.HowAreWeOrganised header="How are we organised?" />,
+    document.getElementById("partisan-app")
+  );
+}
+
+function renderInspiration() {
+  ReactDOM.render(<Partisan.Components.Inspiration header="Inspiration" />,
+    document.getElementById("partisan-app")
+  );
+}
+
+function renderContact() {
+  ReactDOM.render(<Partisan.Components.Contact header="Inspiration" />,
     document.getElementById("partisan-app")
   );
 }
