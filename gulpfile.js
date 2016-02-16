@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 var config = {
     bowerDir: './bower_components',
     scriptsDir: './scripts',
+    componentsDir: './scripts/components',
     nodeDir:'./node_modules'
 }
 
@@ -37,7 +38,7 @@ gulp.task('application-js', function () {
       config.nodeDir + "/director/build/director.js",
       config.scriptsDir + "/utils.js",
       config.scriptsDir + "/models/index.js",
-      config.scriptsDir + "/footer.js",
+      config.componentsDir + "/*.js",
       config.scriptsDir + "/app.js"])
         .pipe(gulpConcat("application.min.js"))
         .pipe(gulpUglify())
