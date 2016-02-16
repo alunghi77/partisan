@@ -11,7 +11,7 @@ var router = Router({
   '/cafebar': this.renderCafeBar,
   '/howareweorganised': this.renderHowAreWeOrganised,
   '/inspiration': this.renderInspiration,
-  '/contact': this.renderContact  
+  '/contact': this.renderContact
 });
 
 router.init('/');
