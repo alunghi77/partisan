@@ -3,8 +3,8 @@ namespace Partisan.Models {
     public title:string;
     public imageUrl:string;
     public videoUrl:string;
-    public content:string;
-    public authour:string;
+    public sentences:string[];
+    public author:string;
     public publishedDate:Date;
   }
 }

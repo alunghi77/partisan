@@ -11,11 +11,16 @@ interface IBlogModel {
   title:string;
   imageUrl:string;
   videoUrl:string;
-  content:string;
-  authour:string;
+  sentences:string[];
+  author:string;
   publishedDate:Date;
 }
 
-interface IBlogCollectionModel {
-  blogs:IBlogModel[];
+interface IBlogProps {
+  model: IBlogModel;
+  key:number;
+}
+
+interface IBlogsProps {
+  model: IBlogModel[];
 }
