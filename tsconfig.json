@@ -20,7 +20,6 @@
         "!node_modules/**"
     ],
     "files": [
-        "blog-content/blogs.ts",
         "scripts/contants.ts",
         "scripts/interfaces.d.ts",
         "scripts/models/aboutus.ts",
@@ -28,6 +27,7 @@
         "scripts/models/index.ts",
         "scripts/models/index0.ts",
         "scripts/utils.ts",
+        "static-content/blogs.ts",
         "typings/react/react-global.d.ts",
         "typings/react/react.d.ts",
         "typings/tsd.d.ts",
