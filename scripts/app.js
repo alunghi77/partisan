@@ -5,7 +5,8 @@ var router = Router({
     '/cafebar': this.renderCafeBar,
     '/howareweorganised': this.renderHowAreWeOrganised,
     '/inspiration': this.renderInspiration,
-    '/contact': this.renderContact
+    '/contact': this.renderContact,
+    '/blog': this.renderBlogs
 });
 router.init('/');
 function renderWhatIsPartisan() {
@@ -25,4 +26,7 @@ function renderInspiration() {
 }
 function renderContact() {
     ReactDOM.render(React.createElement(Partisan.Components.Contact, {header: "Inspiration"}), document.getElementById("partisan-app"));
+}
+function renderBlogs() {
+    ReactDOM.render(React.createElement(Partisan.Components.Blogs, {model: Partisan.StaticContent.Blogs}), document.getElementById("partisan-app"));
 }

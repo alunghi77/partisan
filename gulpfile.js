@@ -36,6 +36,7 @@ gulp.task('application-js', function () {
     return gulp.src([config.nodeDir + "/react/dist/react-with-addons.js",
       config.nodeDir + "/react-dom/dist/react-dom.js",
       config.nodeDir + "/director/build/director.js",
+      "static-content/blogs.js",
       config.scriptsDir + "/utils.js",
       config.scriptsDir + "/models/index.js",
       config.componentsDir + "/*.js",
