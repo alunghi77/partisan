@@ -36,6 +36,7 @@
         "scripts/components/blogs.tsx",
         "scripts/components/cafebar.tsx",
         "scripts/components/contact.tsx",
+        "scripts/components/fundraising.tsx",
         "scripts/components/howareweorganised.tsx",
         "scripts/components/howtogetinvolved.tsx",
         "scripts/components/inspiration.tsx",
