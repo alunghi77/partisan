@@ -1,8 +1,0 @@
-node_modules
-bower_components
-obj
-bin
-.sass-cache
-*.csproj
-*.csproj.user
-*.config
