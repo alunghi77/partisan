@@ -1,0 +1,2 @@
+[09-Apr-2016 13:04:37 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /home2/partisan/public_html/wp-content/themes/writ/functions.php on line 143
+[09-Apr-2016 13:06:35 UTC] PHP Parse error:  syntax error, unexpected 'wp_enqueue_style' (T_STRING) in /home2/partisan/public_html/wp-content/themes/writ/functions.php on line 145

@@ -1,0 +1,264 @@
+# Translation of Writ in English (UK)
+# This file is distributed under the same license as the Writ package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-03-16 07:24:43+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.1.0-alpha\n"
+"Project-Id-Version: Writ\n"
+
+#. Theme Name of the plugin/theme
+msgid "Writ"
+msgstr "Writ"
+
+#. Description of the plugin/theme
+msgid "Writ is a WordPress theme specially made for story writers, poets and  content based bloggers. Writ is aimed to be completely content focused with four optional sidebars, three in footer and one on right of the content area. It features WordPress post formats, featured images and custom header."
+msgstr "Writ is a WordPress theme especially made for story writers, poets and content-based bloggers. Writ is aimed to be completely content focused with four optional sidebars: three in the footer and one on the right of the content area. It features WordPress post formats, featured images and a custom header."
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr "Full Width Page"
+
+#: search.php:14
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: no-results.php:24
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+
+#: no-results.php:19
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+
+#: no-results.php:15
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: no-results.php:9
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: inc/template-tags.php:137
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+
+#: inc/template-tags.php:58
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:57
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:54
+msgid "Post navigation"
+msgstr "Post navigation"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Older posts"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Posts navigation"
+
+#: header.php:40
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: header.php:39
+msgid "Menu"
+msgstr "Menu"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lora, translate this to 'off'. Do not translate into your own language.
+#: functions.php:130
+msgctxt "Lora font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:183
+msgid "Page %s"
+msgstr "Page %s"
+
+#: functions.php:106
+msgid "Third Footer Widget Area"
+msgstr "Third Footer Widget Area"
+
+#: functions.php:98
+msgid "Second Footer Widget Area"
+msgstr "Second Footer Widget Area"
+
+#: functions.php:90
+msgid "First Footer Widget Area"
+msgstr "First Footer Widget Area"
+
+#: functions.php:65
+msgid "Secondary Menu"
+msgstr "Secondary Menu"
+
+#: functions.php:82
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:64
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: footer.php:38
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: footer.php:36
+msgid "A Semantic Personal Publishing Platform"
+msgstr "A Semantic Personal Publishing Platform"
+
+#: footer.php:36
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: content-video.php:52 inc/template-tags.php:175
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: content-video.php:42 inc/template-tags.php:169
+msgid "Posted in %1$s"
+msgstr "Posted in %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-video.php:38 content-video.php:48 inc/template-tags.php:158
+#: inc/template-tags.php:161
+msgid ", "
+msgstr ", "
+
+#: content-aside.php:36 content-link.php:29 content-quote.php:36
+#: content-video.php:31 content.php:45
+msgid "% Comments"
+msgstr "% Comments"
+
+#: content-aside.php:36 content-link.php:29 content-quote.php:36
+#: content-video.php:31 content.php:45
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: content-aside.php:36 content-link.php:29 content-quote.php:36
+#: content-video.php:31 content.php:45
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: content-aside.php:33 content-link.php:26 content-quote.php:33
+#: content-video.php:28 content.php:41 page.php:31 template-full-width.php:29
+msgid "Edit"
+msgstr "Edit"
+
+#: content-aside.php:25 content-link.php:18 content-quote.php:25
+#: content-video.php:20 content.php:31 page.php:26 template-full-width.php:24
+msgid "Pages:"
+msgstr "Pages:"
+
+#: content-aside.php:22 content-link.php:15 content-quote.php:22
+#: content-video.php:17 content.php:28
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:62
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: comments.php:37 comments.php:52
+msgid "Newer Comments &rarr;"
+msgstr "Newer Comments &rarr;"
+
+#: comments.php:36 comments.php:51
+msgid "&larr; Older Comments"
+msgstr "&larr; Older Comments"
+
+#: comments.php:35 comments.php:50
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "One thought on &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
+
+#: archive.php:51
+msgid "Archives"
+msgstr "Archives"
+
+#: archive.php:48
+msgid "Links"
+msgstr "Links"
+
+#: archive.php:45
+msgid "Quotes"
+msgstr "Quotes"
+
+#: archive.php:42
+msgid "Videos"
+msgstr "Videos"
+
+#: archive.php:39
+msgid "Images"
+msgstr "Images"
+
+#: archive.php:36
+msgid "Asides"
+msgstr "Asides"
+
+#: archive.php:33
+msgid "Year: %s"
+msgstr "Year: %s"
+
+#: archive.php:30
+msgid "Month: %s"
+msgstr "Month: %s"
+
+#: archive.php:27
+msgid "Day: %s"
+msgstr "Day: %s"
+
+#: archive.php:24
+msgid "Author: %s"
+msgstr "Author: %s"
+
+#. translators: %1$s: smiley
+#: 404.php:45
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Try looking in the monthly archives. %1$s"
+
+#: 404.php:28
+msgid "Most Used Categories"
+msgstr "Most Used Categories"
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#. Theme URI of the plugin/theme
+msgid "http://gauravtiwari.org/2014/08/23/writ-free-responsive-wordpress-theme-for-writers/"
+msgstr "http://gauravtiwari.org/2014/08/23/writ-free-responsive-wordpress-theme-for-writers/"
+
+#. Author of the plugin/theme
+msgid "Gaurav Tiwari"
+msgstr "Gaurav Tiwari"
+
+#. Author URI of the plugin/theme
+msgid "http://gauravtiwari.org/"
+msgstr "http://gauravtiwari.org/"
